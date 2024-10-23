@@ -63,7 +63,7 @@ export default function HomeScreen() {
           <Image source={require('../../assets/images/rent.png')} style={styles.gridIconFull} />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.gridItem} onPress={() => navigation.navigate('Service')}>
+        <TouchableOpacity style={styles.gridItem} onPress={() => router.push('/Mechanic/homegarage')}>
           <Image source={require('../../assets/images/service.png')} style={styles.gridIconFull} />
         </TouchableOpacity>
       </View>
