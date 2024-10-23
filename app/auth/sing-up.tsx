@@ -51,7 +51,7 @@ const SignUp = () => {
     setSuccessMessage('');
 
     try {
-      const response = await fetch("http://localhost:8082/send-otp", {
+      const response = await fetch("http://192.168.237.13:8082/send-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const SignUp = () => {
     setSuccessMessage('');
 
     try {
-      const response = await fetch("http://localhost:8082/verify-otp", {
+      const response = await fetch("http://192.168.237.13:8082/verify-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -111,7 +111,7 @@ const SignUp = () => {
     setSuccessMessage('');
 
     try {
-      const response = await fetch("http://localhost:8082/register", {
+      const response = await fetch("http://192.168.237.13:8082/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

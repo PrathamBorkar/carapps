@@ -108,13 +108,13 @@ const FormRent = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8082/api/products",
+        "http://192.168.237.13:8082/api/products",
         formdata
       );
 
       if (response.status === 201) {
         alert("Product Added Successfully");
-        router.push("/root/tabs/Rent/homerent");
+        router.push("/Rent/homerent");
       } else {
         alert(`Failed to Add Product: ${response.data.message}`);
       }
